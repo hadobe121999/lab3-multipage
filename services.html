@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        /* General Image Styling */
+        img {
+            max-width: 250px;
+            max-height: 150px; /* Removed 'dvh' and set to a fixed height for consistency */
+            width: 100%; /* Ensures image scales responsively */
+            height: auto; /* Maintains aspect ratio */
+            object-fit: contain; /* Prevents image stretching */
+            display: block; /* Ensures image is a block element, so text can follow */
+            margin-bottom: 1rem; /* Adds space between the image and text */
+        }
+
+        /* Grid Layout for Service Cards */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers the cards horizontally */
+            gap: 2rem; /* Adds space between the cards */
+            padding: 2rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 300px; /* Limits the maximum width of each service card */
+        }
+
+        /* Service Card Content */
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .services-grid {
+                flex-direction: column; /* Stacks the service cards vertically on small screens */
+                align-items: center; /* Centers the cards when stacked vertically */
+            }
+        }
+    </style>
+
+    <!-- Services Section (CSS Grid) -->
+    <section class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+            <img src="images/image1.png" alt="Service 1" class="service-icon">
+        
+            <p>Exceptional service to enhance your business growth.</p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+            <img src="images/image2.png" alt="Service 2" class="service-icon">
+        
+            <p>Delivering quality results with speed and precision.</p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+            <img src="images/image5.png" alt="Service 3" class="service-icon">
+            
+            <p>Innovative solutions to take your business to the next level.</p>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+            <img src="images/image4.png" alt="Service 4" class="service-icon">
+            
+            <p>We offer full understanding in CSS3 with different associated books.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
